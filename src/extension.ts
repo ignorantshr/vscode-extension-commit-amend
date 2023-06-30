@@ -32,7 +32,7 @@ async function amendLastCommit() {
 
 function handleTerminalClosed() {
     terminal = undefined;
-    vscode.window.showInformationMessage('Git commit amended successfully!');
+    // vscode.window.showInformationMessage('Git commit amended successfully!');
 }
 
 export function deactivate() { }
