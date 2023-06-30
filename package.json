@@ -1,0 +1,60 @@
+{
+    "name": "git-commit-amend",
+    "displayName": "Git Commit Amend",
+    "version": "0.0.1",
+    "description": "A VSCode extension to amend the last commit no edit with a button click.",
+    "author": {
+        "name": "ignorantshr",
+        "email": "shrshraa@outlook.com"
+    },
+    "homepage": "https://github.com/ignorantshr/vscode-extension-commit-amend",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ignorantshr/vscode-extension-git-commit-amend.git"
+    },
+    "keywords": [
+        "vscode",
+        "extension",
+        "git",
+        "commit",
+        "amend"
+    ],
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.gitCommitAmend"
+    ],
+    "main": "./out/src/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.gitCommitAmend",
+                "title": "Amend"
+            }
+        ],
+        "menus": {
+            "scm/title": [
+                {
+                    "command": "extension.gitCommitAmend",
+                    "group": "navigation",
+                    "when": "scmProvider == git"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "compile": "tsc",
+        "prepublish": "npm run compile",
+        "vscode:prepublish": "npm run compile",
+        "watch": "tsc -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "typescript": "^4.4.3",
+        "@types/vscode": "^1.4.0"
+    }
+}
