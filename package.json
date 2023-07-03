@@ -7,6 +7,7 @@
         "name": "ignorantshr",
         "email": "shrshraa@outlook.com"
     },
+    "publisher": "ignorantshr",
     "homepage": "https://github.com/ignorantshr/vscode-extension-commit-amend",
     "repository": {
         "type": "git",
