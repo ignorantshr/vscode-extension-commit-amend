@@ -1,7 +1,7 @@
 {
     "name": "git-commit-amend",
     "displayName": "Git Commit Amend",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A VSCode extension to amend the last commit no edit in one click.",
     "author": {
         "name": "ignorantshr",
