@@ -34,7 +34,7 @@
         "commands": [
             {
                 "command": "extension.gitCommitAmend",
-                "title": "Amend Drirectly"
+                "title": "Amend Directly"
             }
         ],
         "menus": {
