@@ -2,7 +2,7 @@
     "name": "git-commit-amend",
     "displayName": "Git Commit Amend",
     "version": "0.0.1",
-    "description": "A VSCode extension to amend the last commit no edit with a button click.",
+    "description": "A VSCode extension to amend the last commit no edit in one click.",
     "author": {
         "name": "ignorantshr",
         "email": "shrshraa@outlook.com"
@@ -33,7 +33,7 @@
         "commands": [
             {
                 "command": "extension.gitCommitAmend",
-                "title": "Amend"
+                "title": "Amend Drirectly"
             }
         ],
         "menus": {
