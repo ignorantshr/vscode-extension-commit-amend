@@ -11,7 +11,7 @@
     "homepage": "https://github.com/ignorantshr/vscode-extension-commit-amend",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ignorantshr/vscode-extension-git-commit-amend.git"
+        "url": "git+https://github.com/ignorantshr/vscode-extension-commit-amend.git"
     },
     "keywords": [
         "vscode",
