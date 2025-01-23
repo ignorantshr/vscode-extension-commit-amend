@@ -1,13 +1,10 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "outDir": "./out",
-        "sourceMap": true
-    },
-    "exclude": [
-        "node_modules",
-        ".vscode",
-        "out"
-    ]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./out",
+    "sourceMap": true,
+    "typeRoots": ["./node_modules/@types", "./node_modules/@types/vscode"]
+  },
+  "exclude": ["node_modules", ".vscode", "out"]
 }
