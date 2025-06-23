@@ -1,7 +1,7 @@
 {
   "name": "git-commit-amend",
   "displayName": "Git Commit Amend",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A VSCode extension to amend the last commit no edit in one click.",
   "author": {
     "name": "ignorantshr",
@@ -27,7 +27,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.gitCommitAmend"
+    "workspaceContains:.git"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -64,6 +64,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/node": "^24.0.3",
     "@types/vscode": "^1.4.0",
     "typescript": "^4.9.5"
   }
