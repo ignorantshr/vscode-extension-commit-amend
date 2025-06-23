@@ -1,7 +1,7 @@
 {
   "name": "git-commit-amend",
   "displayName": "Git Commit Amend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A VSCode extension to amend the last commit no edit in one click.",
   "author": {
     "name": "ignorantshr",
@@ -45,6 +45,15 @@
           "when": "scmProvider == git"
         }
       ]
+    },
+    "configuration": {
+      "properties": {
+        "gitCommitAmend.autoStage": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically add all files from the working directory when there are no files in the staging area."
+        }
+      }
     }
   },
   "scripts": {

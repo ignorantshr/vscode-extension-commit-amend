@@ -15,8 +15,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 async function amendLastCommit() {
     try {
+        let cmd = 'git commit --amend --no-edit';
+        if (vscode.workspace.getConfiguration('gitCommitAmend').get('autoStage')) {
+            cmd = 'git add -A && ' + cmd;
+        }
+
         let terminal = vscode.window.createTerminal({ hideFromUser: true });
-        terminal.sendText('git commit --amend --no-edit');
+        terminal.sendText(cmd);
         setTimeout(() => {
             terminal.dispose();
         }, 2000);
